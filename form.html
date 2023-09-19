@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+    <style>
+        div{
+            margin:2px;
+        }
+        #fieldsetPersonalInfo {
+            background-color: lightblue;;
+        }
+        #fieldsetCourseInfo{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Course Application Form</h2>
+        <form>
+            <fieldset id="fieldsetPersonalInfo">
+                <legend> Personal Informations </legend>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" placeholder="Your name">
+                    <label for="surname">Surname: </label>
+                    <input type="text" placeholder="Your surname">
+                </div>
+                <div>
+                    <label for="age">Age: </label>
+                    <input type="number" value="19">
+                </div>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" placeholder="Your e-mail">
+                </div>
+                <div>
+                    <label for="birthdate">Birthdate: </label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="cvFile">CV File: </label>
+                    <input type="file">
+                </div>
+            </fieldset>
+            <fieldset id="fieldsetCourseInfo">
+                <legend> Course Information</legend>
+                <label for="course">Course: </label>
+                <select name="course">
+                    <option value="ml">Machine Learning</option>
+                    <option value="dl" selected>Deep Learning</option>
+                    <option value="robotics">Robotics</option>
+                </select>
+                <br>
+                <label>Season: </label>
+                <div>
+                    <input name="selected_season"type="radio">
+                    <label for="autumn">Autumn</label> <br>
+                    <input name="selected_season"type="radio">
+                    <label for="spring">Spring</label> <br>
+                    <input name="selected_season"type="radio">
+                    <label for="summer">Summer</label> <br>
+                </div>
+                <label>Time: </label>
+                <div>
+                    <input name="selectedWeekdayEvening" type="checkbox">
+                    <label for="dayWeekdayEvening">Weekday Evening</label> <br>
+                    <input name="selectedWeekendMorning" type="checkbox">
+                    <label for="dayWeekendMorning">Weekend Morning</label> <br>
+                    <input name="selectedWeekendEvening" type="checkbox">
+                    <label for="dayWeekendEvening">Weekend Evening</label> <br>
+                </div>
+            </fieldset>
+            <button type="reset"> Reset </button>
+			<button type="submit"> Submit </button>
+        </form>
+</body>
+</html>

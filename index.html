@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Nida Nur Efe's CV </title>
+    <link rel ="icon" type ="image" href ="favicon.png">
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+  <div class="container">
+    <a class="button" href ="#Personal Information" onclick="document.getElementById('personal').textContent = textContent + 'from anchors'"> Personal Information </a> -
+    <a class="button" href ="#Education" onclick="document.getElementById('Education').textContent = textContent + 'from anchors'"> Education </a> - 
+    <a class="button" href ="#Skills" onclick="document.getElementById('Skills').textContent = textContent + 'from anchors'"> Skills </a> -
+    <a class="button" href ="#Languages" onclick="document.getElementById('Languages').textContent = textContent + 'from anchors'"> Languages </a> -
+    <a class="button" href ="#Hobbies" onclick="document.getElementById('Hobbies').textContent = textContent + 'from anchors'"> Hobbies </a> 
+
+    <h1 id="name-surname" onmouseover="this.style.color = 'blue'; this.style.fontFamily = 'Bradley Hand'"
+    onmouseout = "this.style.color = 'red'; this.style.fontFamily = 'Tahoma'"
+    > Nida Nur Efe's Resume </h1>
+    
+      <h3> <strong> Student </strong></h3>
+    <div class="sub-container">
+      <img id="itu-logo" src="itu-logo.png" width="100">
+      <img src="image.jpg" alt="image" width="100">
+      <br>
+    </div>
+    
+      <h2 id="personal"> <strong> Personal Information </strong></h2>
+    <div class="sub-container">
+      <p> <b> Address: </b> Ayazaga, Istanbul <br>
+        <b> Contact Number: </b> 05380535320 <br>
+        <b> Email: </b> efen22@itu.edu.tr <br>
+        <b> Github: </b> <a id ="github-link" href = "https://github.com/itu-itis22-efen22"> https://github.com/itu-itis22-efen22 </a></p>
+    </div>
+    
+      <h2 id="Education"> Education </h2>
+    <div class="sub-container">  
+        <table>
+        <tr> 
+            <th> School </th>    
+            <th> Department </th>
+            <th> Year </th>
+        </tr>
+        <tr> 
+          <td> Istanbul Technical University </td>
+          <td> Computer Engineering </td>
+          <td> 2022 </td>  
+        </tr>
+        </table>
+      </div>
+    
+      <h3> Courses that I am taking</h3>
+      <p id="fav-course"></p>
+    <div class="sub-container">
+      <ol>
+          <li onclick="document.getElementById('fav-course').textContent = 'My favourite course is BLG101E - Introduction to information systems'"> BLG101E - Introduction to information systems </li>
+          <li onclick="document.getElementById('fav-course').textContent = 'My favourite course is BLG113E - Introduction to computer engineering and ethics'"> BLG113E - Introduction to computer engineering and ethics </li>
+          <li onclick="document.getElementById('fav-course').textContent = 'My favourite course is FIZ101E - Physics I'"> FIZ101E - Physics I </li>
+          <li onclick="document.getElementById('fav-course').textContent = 'My favourite course is MAT103E - Mathematics I'"> MAT103E - Mathematics I </li>
+          <li onclick="document.getElementById('fav-course').textContent = 'My favourite course is MAT281E - Linear algebra and applications'"> MAT281E - Linear algebra and applications </li>
+      </ol>
+    </div>
+    
+      <h2 id="Skills"> Skills </h2>
+    <div class="sub-container">
+      <ul>
+        <li onmouseenter="this.style.backgroundColor = 'lightblue'" onmouseout="this.style.backgroundColor = 'white'"> HTML </li>
+        <li onmouseenter="this.style.backgroundColor = 'lightblue'" onmouseout="this.style.backgroundColor = 'white'"> Python </li>
+      </ul>
+    </div>
+    
+      <h2 id="Languages"> Languages</h2>
+    <div class="sub-container">
+      <ul> 
+        <li onmouseenter="this.style.backgroundColor = 'lightblue'" onmouseout="this.style.backgroundColor = 'white'"> English </li>
+        <li onmouseenter="this.style.backgroundColor = 'lightblue'" onmouseout="this.style.backgroundColor = 'white'"> Turkish </li>
+        </ul>
+    </div>
+    
+      <h2 id="Hobbies"> Hobbies </h2>
+    <div class="sub-container"> 
+      <ul>
+        <li onmouseenter="this.style.backgroundColor = 'lightblue'" onmouseout="this.style.backgroundColor = 'white'"> Baking </li>
+        <li onmouseenter="this.style.backgroundColor = 'lightblue'" onmouseout="this.style.backgroundColor = 'white'"> Travelling </li>
+      </ul>
+    </div>
+          </div>
+  </div>
+  <script>
+    document.onload = window.alert("You will see my resume page. Are you ready?");
+  </script>
+</body>
+</html>
